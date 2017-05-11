@@ -1,0 +1,19 @@
+Design Documentation
+
+This game uses 3 main textures: the skybox set provided in class, a texture holding the layout of the circular course, and a repeating building texture used to build the skyscrapers in the middle of the course.
+
+The course is a simple circular track. To keep the cars on the track collision detection was added that keeps all cars within a certain radial range from the origin which is also the center of the track.
+
+The speed of the cars on the course is determined by the relative angle of the cars to the origin, and the lane the cars are driving in is determined by the radial distance each car is from the origin (which can change upon collision detection or user turning his/her wheel).
+
+Cars can run into each other as the game is played and change speeds. Cars will be slowed down by 25% upon a collision (with either the edge of track or another car) depending on if they are in front of or behind the car they are colliding with.
+
+As game is played the position (angle) is incremented for each car, at a rate that is constant acceleration until the car reaches its maximum velocity.
+
+The AI of the computer cars is controlled by variables that control their turn, position and maximum velocity. The same is true for the user controlled car except the user can mannually change turn by using keyboard. The user also has the ability to brake and go in reverse.
+
+Functions were used to draw the cars and buildings on the track, allowing code reuse and the ability for the programmer to easily change certain aspects of the game (such as car color, building size, etc.). 
+
+The camera follows the user car from behind as the game progresses, but the user has the ability to change zoom, pan and rotation using their mouse.
+
+Once the user has completed 3 laps on the track the game is over. At the conclusion the position of the user is compared to the positions of the other 3 cars to determine the place of the user. The car with the highest position wins the game.

@@ -1,0 +1,28 @@
+CityScape Derby
+by Matthew Cody Ortt and Barret Fisher
+CS 335 - 001
+December 15th, 2014
+
+Keyboard Controls:
+W = accelerate
+S = brake
+A = left turn
+D = right turn
+R = reverse
+
+Mouse Controls:
+Left-Click and Drag =  Rotate the camera
+Right-Click and Drag = Pan the camera
+Scroll-Wheel-Click and Drag = Zoom the camera
+
+Notes:
+The game starts with you in fourth place.
+The console will display a timer. 
+You cannot go until the timer is done counting down for start. 
+There are three laps.
+If you start to run off the course, your speed will be reduced and you will be pushed back on course.
+There are three computer controlled cars on course.
+If you hit one of these cars from the rear or near the rear, your speed will be reduced.
+If you hit one of these cars and you are closer to the lead than it is, they will have the speed reduced.
+Have fun.
+
